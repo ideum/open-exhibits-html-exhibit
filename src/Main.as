@@ -1,43 +1,29 @@
-package HTMLLoader
+package 
 {
 	import com.gestureworks.cml.components.HTMLViewer;
-	import com.gestureworks.cml.components.ImageViewer;
-	import com.gestureworks.cml.element.Button;
-	import com.gestureworks.cml.element.HTML;
-	import com.gestureworks.cml.element.HTMLElement;
-	import com.gestureworks.cml.element.Image;
-	import com.gestureworks.cml.element.Container;
-	import com.gestureworks.cml.element.Frame;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.Menu;
-	import com.gestureworks.cml.element.Text;
-	import com.gestureworks.cml.element.TouchContainer;
-	import com.gestureworks.cml.element.Video;
+	import com.gestureworks.cml.elements.Frame;
+	import com.gestureworks.cml.elements.HTML;
+	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.core.GestureWorks;
-	import com.gestureworks.utils.ExampleTemplate;
-	import flash.display.Sprite;
-	import flash.events.Event;
 	
 	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 	
 	/**
 	 * ...
-	 * @author cyancdesign
+	 * @author Ideum
 	 */
 	public class Main extends GestureWorks 
-	{
-		
-		
-		
+	{						
 		public function Main():void 
 		{
+			gml = "gml/my_gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 
 		{
 			//Space Photo Background
 			var htmlContainer:TouchContainer = new TouchContainer();
-			htmlContainer.class_ = "html_container";
+			htmlContainer.className = "html_container";
 			htmlContainer.visible = true;
 			htmlContainer.targetParent = true;
 			htmlContainer.mouseChildren = false;
@@ -45,7 +31,7 @@ package HTMLLoader
 			htmlContainer.init();
 			
 			var htmlframe:Frame = new Frame();
-			htmlframe.class_ = "frame_element";
+			htmlframe.className = "frame_element";
 			htmlframe.init();
 			
 			var htmlViewer:HTMLViewer = new HTMLViewer();
@@ -57,11 +43,11 @@ package HTMLLoader
 			htmlViewer.html = htmlElement;
 			
 			var htmlElement:HTML = new HTML();
-			htmlElement.class_ = "html_element";
+			htmlElement.className = "html_element";
 			htmlElement.width = 1280;
 			htmlElement.height = 720;
 			htmlElement.baseURL = "http://upload.wikimedia.org";
-			htmlElement.url = "http://upload.wikimedia.org/wikipedia/commons/e/e9/Sombrero_Galaxy_in_infrared_light_(Hubble_Space_Telescope_and_Spitzer_Space_Telescope).jpg";
+			htmlElement.src = "http://upload.wikimedia.org/wikipedia/commons/e/e9/Sombrero_Galaxy_in_infrared_light_(Hubble_Space_Telescope_and_Spitzer_Space_Telescope).jpg";
 			htmlElement.lockBaseURL = false;
 			htmlElement.hideFlash = true;
 			htmlElement.smooth = true;
@@ -78,7 +64,7 @@ package HTMLLoader
 			
 			// NASA.gov Website Viewer
 			var htmlNASAContainer:TouchContainer = new TouchContainer();
-			htmlNASAContainer.class_ = "html_container";
+			htmlNASAContainer.className = "html_container";
 			htmlNASAContainer.visible = true;
 			htmlNASAContainer.targetParent = true;
 			htmlNASAContainer.mouseChildren = false;
@@ -86,7 +72,7 @@ package HTMLLoader
 			htmlNASAContainer.init();
 			
 			var htmlNASAframe:Frame = new Frame();
-			htmlNASAframe.class_ = "frame_element";
+			htmlNASAframe.className = "frame_element";
 			htmlNASAframe.init();
 			
 			var htmlNASAViewer:HTMLViewer = new HTMLViewer();
@@ -101,11 +87,11 @@ package HTMLLoader
 			htmlNASAViewer.html = htmlNASAElement;
 			
 			var htmlNASAElement:HTML = new HTML();
-			htmlNASAElement.class_ = "html_element";
+			htmlNASAElement.className = "html_element";
 			htmlNASAElement.width = 1024;
 			htmlNASAElement.height = 768;
 			htmlNASAElement.baseURL = "http://www.nsf.gov/";
-			htmlNASAElement.url = "http://www.nsf.gov/";
+			htmlNASAElement.src = "http://www.nsf.gov/";
 			htmlNASAElement.lockBaseURL = false;
 			htmlNASAElement.hideFlash = true;
 			htmlNASAElement.smooth = true;
@@ -122,7 +108,7 @@ package HTMLLoader
 			
 			//NASA Twitter Website Viewer
 			var htmlContainer:TouchContainer = new TouchContainer();
-			htmlContainer.class_ = "html_container";
+			htmlContainer.className = "html_container";
 			htmlContainer.visible = true;
 			htmlContainer.targetParent = true;
 			htmlContainer.mouseChildren = false;
@@ -130,15 +116,15 @@ package HTMLLoader
 			htmlContainer.init();
 			
 			var htmlframe:Frame = new Frame();
-			htmlframe.class_ = "frame_element";
+			htmlframe.className = "frame_element";
 			htmlframe.init();
 			
 			var htmlElement:HTML = new HTML();
-			htmlElement.class_ = "html_element";
+			htmlElement.className = "html_element";
 			htmlElement.width = 1024;
 			htmlElement.height = 768;
 			htmlElement.baseURL = "https://twitter.com/nsf/";
-			htmlElement.url = "https://twitter.com/nsf/";
+			htmlElement.src = "https://twitter.com/nsf/";
 			htmlElement.lockBaseURL = false;
 			htmlElement.hideFlash = true;
 			htmlElement.smooth = true;
