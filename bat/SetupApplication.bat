@@ -7,9 +7,9 @@
 :: NOTICE: all paths are relative to project root
 
 :: Your certificate information
-set CERT_NAME="AIR_AS3_Projector"
-set CERT_PASS=fd
-set CERT_FILE="bat\AIRAS3Projector.p12"
+set CERT_NAME="HTMLViewer"
+set CERT_PASS=ide3um
+set CERT_FILE="Ideum.p12"
 set SIGNING_OPTIONS=-storetype pkcs12 -keystore %CERT_FILE% -storepass %CERT_PASS%
 
 :: Application descriptor
@@ -20,15 +20,15 @@ set APP_DIR=bin
 set FILE_OR_DIR=-C %APP_DIR% .
 
 :: Your application ID (must match <id> of Application descriptor)
-set APP_ID=HTMLLoader.AIRAS3Projector
+set APP_ID=HTMLViewer
 
 :: Output
 set AIR_PATH=air
-set AIR_NAME=AIRAS3Projector
 
+set AIR_NAME=HTMLViewer
 
 :validation
-%SystemRoot%\System32\find /C "<id>%APP_ID%</id>" "%APP_XML%" > NUL
+find /C "<id>%APP_ID%</id>" "%APP_XML%" > NUL
 if errorlevel 1 goto badid
 goto end
 

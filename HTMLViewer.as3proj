@@ -4,12 +4,12 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\AIRAS3Projector.swf" />
+    <movie path="bin\HTMLViewer.swf" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
     <movie version="3" />
-    <movie minorVersion="6" />
+    <movie minorVersion="7" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
   </output>
@@ -61,7 +61,6 @@
     <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
     <element path="lib\GestureWorksCML_4.1.0.swc" />
     <element path="lib\GestureWorksGML_4.1.0.swc" />
-    <element path="lib\textLayout.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 <application xmlns="http://ns.adobe.com/air/application/3.6">
 	
-	<id>HTMLLoader.AIRAS3Projector</id> 
+	<id>HTMLViewer</id> 
 	<versionNumber>1.0</versionNumber> 
-	<filename>AIRAS3Projector</filename> 
+	<filename>HTMLViewer</filename> 
 	
-	<name>AIR_AS3_Projector</name> 
+	<name>HTMLViewer</name> 
 	<description></description> 
 	<copyright></copyright> 
 	
 	<initialWindow> 
-		<title>AIR_AS3_Projector</title> 
-		<content>AIRAS3Projector.swf</content> 
+		<title>HTMLViewer</title> 
+		<content>HTMLViewer.swf</content> 
 		<systemChrome>standard</systemChrome> 
 		<transparent>false</transparent> 
 		<visible>true</visible> 
