@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?> 
-<application xmlns="http://ns.adobe.com/air/application/3.6">
+<application xmlns="http://ns.adobe.com/air/application/18.0">
 	
 	<id>HTMLViewer</id> 
 	<versionNumber>1.0</versionNumber> 
 	<filename>HTMLViewer</filename> 
 	
-	<name>HTMLViewer</name> 
+	<name>HTML Viewer</name> 
 	<description></description> 
 	<copyright></copyright> 
 	
 	<initialWindow> 
-		<title>HTMLViewer</title> 
+		<title>HTML Viewer</title> 
 		<content>HTMLViewer.swf</content> 
 		<systemChrome>standard</systemChrome> 
 		<transparent>false</transparent> 

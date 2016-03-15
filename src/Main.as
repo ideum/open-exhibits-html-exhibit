@@ -1,26 +1,27 @@
-package 
+package
 {
 	import com.gestureworks.cml.components.HTMLViewer;
 	import com.gestureworks.cml.elements.Frame;
 	import com.gestureworks.cml.elements.HTML;
 	import com.gestureworks.cml.elements.TouchContainer;
-	import com.gestureworks.core.GestureWorks;
+	import com.gestureworks.core.GestureWorksAIR;
 	
 	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 	
 	/**
 	 * ...
-	 * @author Ideum
+	 * @author 
 	 */
-	public class Main extends GestureWorks 
-	{						
-		public function Main():void 
+	public class Main extends GestureWorksAIR 
+	{
+		
+		public function Main() 
 		{
 			gml = "gml/my_gestures.gml";
 		}
 		
-		override protected function gestureworksInit():void 
-		{
+		override protected function gestureworksInit():void {
+			
 			//Space Photo Background
 			var htmlContainer:TouchContainer = new TouchContainer();
 			htmlContainer.className = "html_container";
@@ -59,7 +60,6 @@ package
 			htmlViewer.childToList("html_container", htmlContainer);
 			addChild(htmlViewer);			
 			htmlViewer.init();	
-			
 			
 			
 			// NASA.gov Website Viewer
@@ -104,7 +104,8 @@ package
 			htmlNASAViewer.addChild(htmlNASAContainer);
 			htmlNASAViewer.childToList("html_container", htmlNASAContainer);
 			addChild(htmlNASAViewer);			
-			htmlNASAViewer.init();	
+			htmlNASAViewer.init();		
+			
 			
 			//NASA Twitter Website Viewer
 			var htmlContainer:TouchContainer = new TouchContainer();
@@ -148,7 +149,7 @@ package
 			htmlViewer.addChild(htmlContainer);
 			htmlViewer.childToList("html_container", htmlContainer);
 			addChild(htmlViewer);			
-			htmlViewer.init();	
+			htmlViewer.init();				
 		}
 		
 	}
