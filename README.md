@@ -9,6 +9,8 @@ Then, www.nsf.gov and www.twitter.com/nsf is loaded into separate viewers which 
 
 Demo application is built using FlashDevelop. Follow the AIR debug and packaging instructions to run/edit application.
 
+![HTML Exhibit](http://openexhibits.org/wp-content/uploads/2013/07/HTMLViewer-screenshot1.jpg)
+
 NOTES<br>
 Remove personal gestureworks key.<br>
 When using smooth display, update display every 1/30 second instead of waiting for user initiated event.<br>
