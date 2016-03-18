@@ -11,19 +11,19 @@ Demo application is built using FlashDevelop. Follow the AIR debug and packaging
 
 ![HTML Exhibit](http://openexhibits.org/wp-content/uploads/2013/07/HTMLViewer-screenshot1.jpg)
 
-NOTES<br>
-Remove personal gestureworks key.<br>
-When using smooth display, update display every 1/30 second instead of waiting for user initiated event.<br>
+NOTES
+- Remove personal gestureworks key.
+- When using smooth display, update display every 1/30 second instead of waiting for user initiated event.<br>
 
-SUPPORTED OPERATING SYSTEMS<br>
-Windows 7<br>
-Windows 8
+SUPPORTED OPERATING SYSTEMS
+- Windows 7
+- Windows 8
 
-ASSOCIATED LANGUAGES<br>
-ActionScript 3
+ASSOCIATED LANGUAGES
+- ActionScript 3
 
-REQUIRED ENVIRONMENTS<br>
-Adobe Flash Player 10.1+<br>
-Adobe AIR 2.5+
+REQUIRED ENVIRONMENTS
+- Adobe Flash Player 10.1+
+- Adobe AIR 2.5+
 
 Author: Chris Yanc  
